@@ -1,0 +1,11 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+    PROFESSION: "I am a DevOps Engineer"
+    EXPERIENCE: "6 Years"
+    NAME: "Ramireddy"
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "My name is: {{ NAME }}, Profession is: {{ PROFESSION }}, and i have {{ EXPERIENCE }} of experience"   
