@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    PROFESSION: "I am a DevOps Engineer"
+    PROFESSION: "DevOps Engineer"
     EXPERIENCE: "6 Years"
     NAME: "Ramireddy"
   tasks:
