@@ -1,0 +1,6 @@
+- name: Hellow world
+  hosts: web
+  tasks:
+  - name: 
+    ansible.builtin.debug:
+      mag: "Hellow World!"
