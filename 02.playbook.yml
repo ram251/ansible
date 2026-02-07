@@ -3,4 +3,4 @@
   tasks:
   - name: 
     ansible.builtin.debug:
-      mag: "Hellow World!"
+      msg: "Hellow World!"
