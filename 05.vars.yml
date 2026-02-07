@@ -1,0 +1,7 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "My name is {{ NAME }}, Working as a {{ PROFESSION }} and i have {{ EXPERIENCE }} of experience"   
