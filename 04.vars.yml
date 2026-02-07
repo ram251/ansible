@@ -8,4 +8,4 @@
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "My name is: {{ NAME }}, Profession is: {{ PROFESSION }}, and i have {{ EXPERIENCE }} of experience"   
+      msg: "My name is {{ NAME }}, Worling as a{{ PROFESSION }} and i have {{ EXPERIENCE }} of experience"   
