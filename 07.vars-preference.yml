@@ -6,9 +6,9 @@
   # vars_files:
   # - variables.yml  
   vars_prompt:
-  - name: NAME
-    prompt: Please enter name
-    private: false
+  # - name: NAME
+  #   prompt: Please enter name
+  #   private: false
   tasks:
   - name: print name
     # vars: 
@@ -19,3 +19,4 @@
 # 1. args    
 # 2. task
 # 3. file
+# 4. prompt
