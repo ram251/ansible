@@ -1,7 +1,7 @@
 - name: conditions
   hosts: local
   connection: local
-  VARS:
+  vars:
     IS_LIVE: true
   tasks:
   - name: Check EMI or not
