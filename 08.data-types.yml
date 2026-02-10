@@ -1,0 +1,27 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    MOBILE: "IPhone 15Pro Max" # string
+    TENURE: 6 # integer
+    EMI: true # boolen
+    DETAILS: # MAP or Dictionary
+      OLD: 3 
+      BRAND: "Apple"
+    FEATURES: # List
+    - CAMERA
+    - DISPLAY
+    - FACEID  
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: 
+        Mobile: {{ MOBILE }}
+        Tenure: {{ TENURE }}
+        Is EMI: {{ EMI }}
+        Details: {{ DETAILS }}
+        Features: {{ FEATURES }}
+
+
+
+
