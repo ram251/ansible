@@ -1,0 +1,10 @@
+- name: check a number less than 10 or not
+  hosts: local
+  connection: local
+  vars:
+    NUMBER_OF_EXP: 6
+  tasks:
+  - name: I have more than 6 years of experience
+    ansible.builtin.debug:
+      msg: "Yes, More than 6 years"
+    when: NUMBER_OF_EXP > 5    
