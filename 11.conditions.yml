@@ -5,3 +5,13 @@
   - name: print facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+
+  - name: check redhat or not
+    ansible.builtin.debug:
+      msg: "Yes, Package manager is RedHat"
+    when: ansible_facts.distribution == "RedHat"
+
+  - name: check ubuntu or not
+    ansible.builtin.debug:
+      msg: "Yes, Package manager is Ubuntu"
+    when: ansible_facts.distribution == "Ubuntu"        
