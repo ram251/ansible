@@ -1,0 +1,10 @@
+- name: conditions
+  hosts: local
+  connection: local
+  VARS:
+    IS_LIVE: true
+  tasks:
+  - name: Check EMI or not
+    ansible.builtin.debug:
+      msg: "Yes, it is live"
+    when: IS_LIVE
